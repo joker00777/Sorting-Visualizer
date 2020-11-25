@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="css\styles.css">
+
+</head>
+<body>
+    <nav>
+        <div>
+            <div class="size">
+                <button id="generate">Generate new array</button>
+            </div>
+            <div class="size">
+                <p>Size of the array:</p>
+                <input id="array_size" type="range" min=10 max=120 step=1 value=50>
+                <p>Speed :</p>
+                <input id="speed" type="range" min=1 max=5 step=1 value=3>
+            </div>
+            <div class="size algo">
+                <button>Bubble</button>
+                <button>Insertion</button>
+                <button>Merge</button>
+                <button>Quick</button>
+
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="first_container">
+        </div>
+        <div id="array_container">
+        </div>
+        <div id="last_container">
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="scripts\main.js"></script>
+    <script src="scripts\bubble_sort.js"></script>
+    <script src="scripts\insertion_sort.js"></script>
+    <script src="scripts\merge_sort.js"></script>
+    <script src="scripts\quick_sort.js"></script>
+</body>
+
